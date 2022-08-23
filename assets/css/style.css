@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 
 header{
@@ -18,26 +19,45 @@ body{
     flex: 1 0 auto;
     margin-left: 200px;
     margin-right: 200px; 
+    min-height: 100vh;
+    background-color: lightgreen;
 }
 
-.intro{
-}
 .button{
     background: yellow;
     border-radius: 3px;
     padding: 10px;
     cursor: pointer;
     margin-bottom: 10px;
+    font-weight: bold;
 }
-#scores{
+
+#timer{
     background: yellow;
     border-radius: 3px;
     padding: 10px;
-    cursor: pointer;
     margin-bottom: 10px;
+    font-weight: bold;
 }
-#timer{
-    background: yellow;
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px; 
+}
+.answerChoices{
+    background: white;
     border-radius: 3px;
     padding: 10px;
     cursor: pointer;
