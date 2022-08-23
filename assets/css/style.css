@@ -1,7 +1,45 @@
+*{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 body{
     text-align: center;
     justify-content: center;
     flex: 1 0 auto;
     margin-left: 200px;
     margin-right: 200px; 
+}
+
+.intro{
+}
+.button{
+    background: yellow;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#scores{
+    background: yellow;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#timer{
+    background: yellow;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
