@@ -16,7 +16,7 @@ var questions = document.querySelector('.questions');
 startBtn.addEventListener('click', startquiz);
 
 // TIMER VARIABLES
-var secondsLeft= 60;
+var seconds= 60;
 
 // TIMER FUNCTION- then the timer starts counting down
 function countdown () {
@@ -55,13 +55,5 @@ var questions = [
 ]; 
 
 // ASKQUESTION FUNCTION- questions and choices should pop up
-function askQuestion(){
-    console.log("test")
-    seconds = 60;
-    
-}
 
 startBtn.addEventListener("click",askQuestion)
-
-
-    
