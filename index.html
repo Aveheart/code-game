@@ -9,38 +9,54 @@
 </head>
 <body>
     <!-- where high scores and timer can go -->
-    <header>
+    <header class ="header">
         <div>
-            <button class="button" >High Scores</button>
+            <button class="button" id="hiscore">High Scores</button>
         </div>
         <div>
-            <p id="timer"> Timer: 60 s</p>
+            <p id="timer" class="button"> Timer: 60 s</p>
         </div>
     </header>
+    
+   
     <!-- heading and paragraph underneath  -->
-    <section id="introduction">
-        <h1>Coding Quiz Game!</h1>
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/ Time by ten seconds.</p>
+    <section id="introduction" class="introduction">
+        <h1 id="title">Coding Quiz Game!</h1>
+        <p>Answer the following code-related questions within the time limit. Incorrect answers will penalize your score/ Time by ten seconds.</p>
         <button id="start" class="button">Start</button>
     </section>
- <!-- for questions?? -->
-    <!-- <section id="questions"> 
-        <div class ="question1">
-            <h2>Question 1: Commonly used data types do NOT include:</h2>
-            <ul>
-                <li><button class="answerChoices">A. Booleans</button></li>
-                <li><button class="answerChoices">B. Strings</button></li>
-                <li><button class="answerChoices">C. Numbers</button></li>
-                <li><button class="answerChoices">D. Alerts</button></li>
-            </ul>
-        </div>
-        <div class ="question2"> 
-            <h2>Question 2:</h2>
-            <ul>
-                <li><button><button</li>
-            </ul>
-        </div> -->
+    <!-- questions -->
+    <main>
+    <section class="questions" id="questions">
+        <h2>questions asked</h2>
+        <ul>
+            <li><button>answer 1</button></li>
+            <li><button>answer 2</button></li>
+            <li><button>answer 3</button></li>
+            <li><button>answer 4</button></li>
+        </ul>
     </section>
+    <section id="submit" class="submit-form">
+        <h2 id="finish">finished</h2>
+        <p id="final-score">final score</p>
+        <p>enter initials
+            <input id="inital">
+            <button class="button" id="submit-btn">submit</button>
+        </p>
+    </section>
+    <section class="highscore" id ="highscorepage">
+        <div>
+            <h2>High Scores</h2>
+            <div id="score_record"><p>Your record</p></div><br><br>
+            <div>
+                <button class="button" id="back_btn">Go back</button>
+                <button class="button" id="clear_btn">Clear Highscores</button>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+
     <script src="./assets/js/script.js"></script>
 
 </body>
