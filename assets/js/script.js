@@ -7,55 +7,39 @@ var highScore = document.querySelector('#hiscore');
 var seconds = document.querySelector('#timer'); 
 var yourRecord = document.querySelector("#record");
 // variable for questions as an array
-
+// start function
 startBtn.addEventListener('click', startquiz);
  function startquiz(){
     introduction.style.display= "none";
     questions.style.display = "block";
-    seconds = 60;
- }
+    seconds = 60;};
 
 
 
-
-
-
-
-
-
-
-// FUNCTIONS
-// click on start
-// startBtn.addEventListener("click", startQuiz);
-// function startQuiz () {
-//     introduction.style.display = "none";
-//     questions.style.display = "block";
-//     timer = 60;
-//     countdown()}
   
 // var secondsLeft = 60
 // var startQuiz = document.querySelector("#start");
-// var questions = [
-//     {question: "What does HTML stand for?",
-//     answers: ["Hypertext Markup Language", "Hyperlinks and Text Markup Language", "Home Tool Markdown Language", "Hardy Tools Markup Language"],
-//     correct: "Hypertext Markup Language",},
+var questions = [
+    {question: "String values must be enclosed in __",
+    answers: ["commas", "quotes", "hash tags", "dollar signs"],
+    correct: "quotes",},
 
-//     {question: "In JavaScript, what element is used to store and manipulate text?",
-//     answers: ["Recorders", "Variables", "Arrays", "Strings"], 
-//     correct: "Strings",},
+    {question: "commonly used data types are all the following EXCEPT",
+    answers: ["strings", "numbers", "booleans", "alerts"], 
+    correct: "alerts"},
 
-//     {question: "CSS stands for _______ Style Sheets",
-//     answers: ["Cascading", "Combined", "Concept", "Charlie's"],
-//     correct: "Cascading",},
+    {question: "CSS stands for _______ Style Sheets",
+    answers: ["Cascading", "Combined", "Concept", "Charlie's"],
+    correct: "Cascading",},
 
-//     {question: "In JavaScript, what is a block of code called that is used to perform a specfic task?",
-//     answers: ["Conditional Statement", "Variable", "Declaration", "Function"],
-//     correct: "Function",},
+    {question: "In JavaScript, what is a block of code called that is used to perform a specfic task?",
+    answers: ["Conditional Statement", "Variable", "Declaration", "Function"],
+    correct: "Function",},
 
-//     {question: "Which tag is used to define a container for an external app or plug-in in HTML?",
-//     answers: ["<code>", "<embed>", "<!DOCTYPE>", "<caption>"],
-//     correct: "<embed>",}
-// ]; 
+    {question: "the first index of an array is __",
+    answers: ["1", "3", "0", "2"],
+    correct: "0",}
+]; 
 // var score = 0; 
 // var input = document.getElementById("initials")
 // var j = 0;
@@ -109,20 +93,20 @@ startBtn.addEventListener('click', startquiz);
 // }
 
 // Quiz timer
-// function counter () {
-//    var timer = document.querySelector("#timer")
-//     interval = setInterval(function() { 
-//         timer
-//         secondsLeft--;
-//         timer.textContent = secondsLeft
-//         if(secondsLeft === 0) {
-//             clearInterval(interval);
-//             // When timer get to zero, or when all questions have been answered, which ever comes first
-//         }
-//         else return secondsLeft;
+function counter () {
+   var timer = document.querySelector("#timer")
+    interval = setInterval(function() { 
+        timer
+        secondsLeft--;
+        timer.textContent = secondsLeft
+        if(secondsLeft === 0) {
+            clearInterval(interval);
+            // When timer get to zero, or when all questions have been answered, which ever comes first
+        }
+        else return secondsLeft;
         
-//     }, 1000);
-// }
+    }, 1000);
+}
 
 
 // //commit scores to local storage so they can be pulled later
