@@ -3,29 +3,35 @@ var startBtn = document.querySelector('#start')
 var introduction = document.querySelector('#introduction');
 var questions = document.querySelector('#questions');
 var submitbtn = document.querySelector('#submit');
-var highScore = document.querySelector('#highscorepage');
-
+var highScore = document.querySelector('#hiscore');
+var seconds = document.querySelector('#timer'); 
+var yourRecord = document.querySelector("#record");
 // variable for questions as an array
 
-
-
-
-
-
-
-
-
-
-
-
-FUNCTIONS
-// click on start
-startBtn.addEventListener("click", startQuiz);
-function startQuiz () {
-    introduction.style.display = "none";
+startBtn.addEventListener('click', startquiz);
+ function startquiz(){
+    introduction.style.display= "none";
     questions.style.display = "block";
-    timer = 60;
-    countdown()}
+    seconds = 60;
+ }
+
+
+
+
+
+
+
+
+
+
+// FUNCTIONS
+// click on start
+// startBtn.addEventListener("click", startQuiz);
+// function startQuiz () {
+//     introduction.style.display = "none";
+//     questions.style.display = "block";
+//     timer = 60;
+//     countdown()}
   
 // var secondsLeft = 60
 // var startQuiz = document.querySelector("#start");
