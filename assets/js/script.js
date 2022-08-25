@@ -91,3 +91,35 @@ function startQuiz () {
     showQuestion(questionNumber);
   
 }
+// FUNCTION FOR QUESTIONS
+function showQuestion (n) {
+    askQuestion.textContent = questionList[n].question;
+    answerBtn1.textContent = questionList[n].choices[0];
+    answerBtn2.textContent = questionList[n].choices[1];
+    answerBtn3.textContent = questionList[n].choices[2];
+    answerBtn4.textContent = questionList[n].choices[3];
+    questionNumber = n;
+}
+
+// FUNCTION CHECKING ANSWER RIGHT OR WRONG
+function checkAnswer(event) {
+    event.preventDefault();
+    setTimeout(function () {
+    }, 1000);
+
+    // if answer right, score 1
+    if (questionList[questionNumber].answer == event.target.value) { 
+        totalScore = totalScore + 1;
+    // if wrong, lose 10secs
+    } else {
+        secondsLeft = secondsLeft - 10;
+    }
+         //ask another question until game over
+    if (questionNumber < questionList.length -1 ) {
+    // call showQuestions to bring in next question when any reactBtn is clicked
+        showQuestion(questionNumber +1);
+    } else {
+    gameOver();
+}
+questionCount++;
+}
