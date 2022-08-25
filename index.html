@@ -8,36 +8,35 @@
   </head>
 
   <body>
+    <!-- HIGH SCORES AND TIMER IN HEADER + BUTTONS -->
     <header>
         <div class="header">
-            <!--left corner to view high score-->
             <div>
                 <button class="button" id="highScores">High Scores</button>
             </div>
-            <!--right corner to set a timer-->
             <div>
-                <p id="timer"> Time left: 60 s</p>
+                <p id="timer"> Time: 60</p>
             </div>
         </div>
     </header>
 
     <main>
         <div>
-            <!--introduction section-->
+           <!-- START PAGE SECTION-->
             <section class="intro_page" id="intro">
                 <div id="introduction">
                     <h1>
-                        Welcome to Coding Quiz Challenge
+                     Take the challenge! The Coding Quiz Challenge
                     </h1>
                     <p id="instruction">
-                        Try to answer the following code-related questions within the time limit. Keep in mid that incorrect answers will penalize your score/time by ten seconds!
+                        Answer the following code-related questions within the time limit.  Incorrect answers will subtract your time by ten seconds!
                     </p>
                     <button class="button" id="start">Start Quiz</button>
                 </div>
             </section>
 
-            <!--questions section-->
-            <section class="question_page" id="questionSec">
+            <!--QUESTIONS SECTION-->
+            <section class="questionPage" id="questionSec">
                 <div>
                     <!--question body-->
                     <div>
@@ -49,15 +48,12 @@
                             <li><button class ="choices button" id="ansbtn4" value="d">Answer4</button></li>
                         </ul>
                     <div>
-
-                    <!--question check-->
                     <div id="check">
-                        
-                    <!-- </div> -->
-                </div>
+
+                    </div>
             </section>
 
-            <!--final report section-->
+            <!--ENTER INITIALS AND SUBMIT SECTION-->
             <section class="submit_page" id="submitForm">
                 <div>
                     <h2 id="finish">Quiz Complete</h2>
@@ -69,12 +65,13 @@
                 </div>
             </section>
 
-            <!--high score section-->
+            <!--HIGH SCORE-->
             <section class="highscore_page" id ="hiScore">
                 <div>
                     <h2>High Scores</h2>
                     <div id="hiRecords"><p>Your record</p></div><br><br>
                     <div>
+                        <!-- BACK AND CLEAR BUTTON -->
                         <button class="button" id="backBtn">Go back</button>
                         <button class="button" id="clearBtn">Clear Highscores</button>
                     </div>
@@ -82,7 +79,7 @@
             </section>
         </div>
     </main>
-   
+   <!-- LINK SCRIPT -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

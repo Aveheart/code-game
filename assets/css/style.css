@@ -46,7 +46,7 @@ li {
 }
 
 /* THIS SHOULD HIDE THE SECTIONS BEFORE CALLED */
-.question_page, .submit_page, .highscore_page, #check_line {
+.questionPage, .submit_page, .highscore_page, #check_line {
     display:none;
 }
 
