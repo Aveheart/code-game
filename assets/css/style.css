@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
+
   }
 
 main {
@@ -31,7 +32,14 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+#submitForm{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url(https://static.wikia.nocookie.net/arresteddevelopment/images/b/b0/1x18_Missing_Kitty_%2857%29.png/revision/latest?cb=20120819211123);
+}
 ul {
     list-style-type: none;
     display: flex;
@@ -46,12 +54,12 @@ li {
 }
 
 /* THIS SHOULD HIDE THE SECTIONS BEFORE CALLED */
-.questionPage, .submit_page, .highscore_page, #check_line {
+.questionPage, .submit_page, .highscore_page, #check_line, #submitForm {
     display:none;
 }
 
 .button{
-    background:rgb(176, 37, 37);
+    background:rgb(119, 102, 197);
     border-radius: 3px;
     padding: 15px;
     cursor: pointer;
@@ -60,7 +68,7 @@ li {
   
 .button:hover{
   
-    background-color:rgb(119, 102, 197);
+    background-color:rgb(172, 212, 40);
   
 }
   

@@ -143,6 +143,51 @@ function getScore () {
     return freshList;
 };
 
+// FUNCTION- SAVE HIGH SCORES
+function renderScore () {
+    scoreRecord.innerHTML = "";
+    scoreRecord.style.display ="block";
+    var highScores = sort();   
+    // top 5 
+    var topFive = highScores.slice(0,5);
+    for (var i = 0; i < topFive.length; i++) {
+        var item = topFive[i];
+    // Show the score list on score board
+    var li = document.createElement("li");
+    li.textContent = item.user + " - " + item.score;
+    li.setAttribute("data-index", i);
+    scoreRecord.appendChild(li);
+    }
+};
+
+// FUNCTION SORT AND RANK
+function sort () {
+    var unsortedList = getScore();
+    if (getScore == null ){
+        return;
+    } else{
+    unsortedList.sort(function(a,b){
+        return b.score - a.score;
+    })
+    return unsortedList;
+}};
+
+function addItem (n) {
+    var addedList = getScore();
+    addedList.push(n);
+    localStorage.setItem("ScoreList", JSON.stringify(addedList));
+}
+
+// FUNCTION SAVE SCORE
+function saveScore () {
+    var scoreItem ={
+        user: userInitial.value,
+        score: totalScore
+    }
+    addItem(scoreItem);
+    renderScore();
+}
+
 
 // EVENTLISTENERS
 // Start quiz
@@ -152,5 +197,4 @@ reactButtons.forEach(function(click){
 
     click.addEventListener("click", checkAnswer);
 });
-
 
