@@ -54,3 +54,28 @@ var questionList = [
         answer: "d"
     },
 ];
+
+// VARIABLES FOR TIMER AND OTHERS
+var timeLeft = document.getElementById("timer");
+
+var secondsLeft = 60;
+var questionNumber = 0;
+var totalScore = 0;
+var questionCount = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
