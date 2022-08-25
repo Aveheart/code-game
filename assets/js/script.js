@@ -123,3 +123,16 @@ function checkAnswer(event) {
 }
 questionCount++;
 }
+
+
+
+// EVENTLISTENERS
+// Start quiz
+startBtn.addEventListener("click", startQuiz);
+// each click
+reactButtons.forEach(function(click){
+
+    click.addEventListener("click", checkAnswer);
+});
+
+
