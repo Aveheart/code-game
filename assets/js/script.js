@@ -123,7 +123,25 @@ function checkAnswer(event) {
 }
 questionCount++;
 }
+// FUNCTION- GAME OVER- game ends if time runs out or questions answered
+function gameOver() {
 
+    questionPage.style.display = "none";
+    scoreBoard.style.display = "block";
+    finalScore.textContent = "Final Score:" + totalScore;  
+    timeLeft.style.display = "none"; 
+};
+
+function getScore () {
+    var currentList =localStorage.getItem("ScoreList");
+    if (currentList !== null ){
+        freshList = JSON.parse(currentList);
+        return freshList;
+    } else {
+        freshList = [];
+    }
+    return freshList;
+};
 
 
 // EVENTLISTENERS
