@@ -25,3 +25,32 @@ var finish =document.querySelector("#finish");
 
 var backBtn =document.querySelector("#backBtn");
 var clearBtn=document.querySelector("#clearBtn");
+
+// VARIABLE FOR QUESTIONS
+var questionList = [
+    {
+        question: " String values must be enclosed within _____",
+        choices: ["a. commas", "b. dollar signs", "c. quotes", "d. hashtags"],
+        answer: "c"
+    },
+    {
+        question: " Commonly used data types DO NOT include:",
+        choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
+        answer: "c"
+    },
+    {
+        question: " CSS stands for ___ Style Sheets",
+        choices: ["a. crunchy", "b. cascading", "c. captain", "d. circling"],
+        answer: "b"
+    },
+    {
+        question: " arrays in javascript can be used to store __",
+        choices: ["a. strings" , "b. numbers", "c. booleans" , "d. all of the above"],
+        answer: "d"
+    },
+    {
+        question: " The first index of an array is ____.",
+        choices: ["a. 2", "b. 1", "c. 3", "d. 0"],
+        answer: "d"
+    },
+];
