@@ -63,19 +63,31 @@ var questionNumber = 0;
 var totalScore = 0;
 var questionCount = 1;
 
+// FUNCTION- COUNTDOWN BEGINS AFTER START BUTTON PRESSED
+function countdown() {
+        
+    var timerInterval = setInterval(function () {
 
+      secondsLeft--;
+      timeLeft.textContent = "It's the final countdown:" + secondsLeft;
 
+        if (secondsLeft <= 0){
+            clearInterval(timerInterval); 
+            gameOver();
 
+        } else  if(questionCount >= questionList.length +1) {
+            clearInterval(timerInterval);
+            gameOver();
+            } 
+}, 1000);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+// FUNCTION-CLICK BUTTON TO START GAME
+function startQuiz () {
+    introPage.style.display = "none";
+    questionPage.style.display = "block";
+    questionNumber = 0
+    countdown();
+    showQuestion(questionNumber);
+  
+}
